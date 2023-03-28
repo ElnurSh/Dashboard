@@ -1,0 +1,108 @@
+/* Set font family and minimum height for the body */
+body{
+font-family: Assistant, sans-serif;
+min-height: 90vh;
+}
+
+/* Styling for the login container */
+.login {
+color: white;
+background: background: #136a8a;
+background:
+-webkit-linear-gradient(to right, #267871, #136a8a);
+background:
+linear-gradient(to right, #267871, #136a8a);
+margin: auto;
+box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.3);
+animation: pulse 2s ease-in-out infinite;
+border-radius: 8px;
+padding: 50px;
+margin: auto;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+/* Define the pulse animation */
+@keyframes pulse {
+0% {
+box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.3);
+}
+50% {
+box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.6);
+}
+100% {
+box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.3);
+}
+}
+
+/* Styling for the company name in the login container */
+.login .head .company {
+font-size: 2.2em;
+}
+
+/* Styling for the message in the login container */
+.login .msg {
+text-align: center;
+}
+
+/* Styling for the text input field in the login container */
+.login .form input[type=text].text {
+border: none;
+background: none;
+box-shadow: 0px 2px 0px 0px white;
+width: 100%;
+color: white;
+font-size: 1em;
+outline: none;
+}
+
+/* Styling for the text placeholder in the text input field */
+.login .form .text::placeholder {
+color: #D3D3D3;
+}
+
+/* Styling for the password input field in the login container */
+.login .form input[type=password].password {
+border: none;
+background: none;
+box-shadow: 0px 2px 0px 0px white;
+width: 100%;
+color: white;
+font-size: 1em;
+outline: none;
+margin-bottom: 20px;
+margin-top: 20px;
+}
+
+/* Styling for the password placeholder in the password input field */
+.login .form .password::placeholder {
+color: #D3D3D3;
+}
+
+/* Styling for the login button in the login container */
+.login .form .btn-login {
+background: none;
+text-decoration: none;
+color: white;
+box-shadow: 0px 0px 0px 2px white;
+border-radius: 3px;
+padding: 5px 2em;
+transition: 0.5s;
+border: none;
+}
+
+/* Styling for the login button on hover in the login container */
+.login .form .btn-login:hover {
+background: white;
+color: dimgray;
+transition: 0.5s;
+}
+
+/* Styling for the callback answer text */
+.callback-answer{
+color: red;
+font-family: Georgia, serif;
+font-weight normal;
+}
