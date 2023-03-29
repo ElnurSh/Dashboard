@@ -96,7 +96,7 @@ def update_dashboard(drop_value, slider_value):
         row_one_col_three = 0
     else:
         row_one_col_three = format(len(df[(df.engine_volume.between(slider_value[0],
-                                                                    slider_value[1])) & (df.area.isin(drop_value)) & (~df.organization.isin(['простой_автомобиля']))]) /
+                                                                    slider_value[1])) & (df.area.isin(drop_value)) & (~df.organization.isin(['простой_автомобиля']))]) &
         len(df[(df.engine_volume.between(slider_value[0], slider_value[1])) & (df.area.isin(drop_value))]), '.2f')
     fig1 = pex.pie(df[(df.engine_volume.between(slider_value[0], slider_value[1])) & (df.area.isin(drop_value))],
                    names='organization', color='organization',
